@@ -1,0 +1,33 @@
+baseurl = "http://docs.openra.zone"
+languageCode = "en-us"
+title = "OpenRA: Zone"
+MetaDataFormat = "yaml"
+
+[params]
+	description = "Documentation of OpenRA: Zone"
+	author = "TODO"
+
+[taxonomies]
+	tag = "tags"
+	group = "groups"
+
+[[menu.main]]
+	name = "About"
+	identifier = "about"
+	pre = "<i class='fa fa-heart'></i>"
+	weight = -110
+[[menu.main]]
+	name = "Getting Started"
+	identifier = "getting started"
+	pre = "<i class='fa fa-road'></i>"
+	weight = -100
+[[menu.main]]
+	name = "Tech design"
+	identifier = "tech"
+	pre = "<i class='fa fa-file-text'></i>"
+	weight = -90
+[[menu.main]]
+	name = "Troubleshooting"
+	identifier = "troubleshooting"
+	pre = "<i class='fa fa-wrench'></i>"
+	weight = -30
