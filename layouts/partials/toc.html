@@ -1,4 +1,6 @@
-<div id="toc" class="well col-md-4 col-sm-6 clearfix" >
-	{{ .TableOfContents }}
-</div>
-<div style="clear: both;" ></div>
+{{if .TableOfContents}}
+	<div id="toc" class="well col-md-4 col-sm-6 clearfix" >
+		{{ .TableOfContents }}
+	</div>
+	<div style="clear: both;" ></div>
+{{end}}
