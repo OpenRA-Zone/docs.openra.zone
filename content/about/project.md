@@ -4,7 +4,7 @@ linktitle: Project
 menu:
   main:
     parent: about
-notoc: true
+toc: enabled
 title: Project target and goal
 description: foobar foo baar
 weight: 70

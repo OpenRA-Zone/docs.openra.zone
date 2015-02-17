@@ -1,6 +1,10 @@
-{{if .TableOfContents}}
-	<div id="toc" class="well col-md-4 col-sm-6 clearfix" >
-		{{ .TableOfContents }}
-	</div>
-	<div style="clear: both;" ></div>
+{{ if and (isset .Params "toc") (.Params.toc) }}
+	<!-- no table of contents, "notoc" is set -->
+{{else}}
+	{{ if .TableOfContents }}
+		<div id="toc" class="well col-md-4 col-sm-6 clearfix" >
+			{{ .TableOfContents }}
+		</div>
+		<div style="clear: both;" ></div>
+	{{ end }}
 {{end}}
