@@ -4,14 +4,14 @@ linktitle: Tesla messages
 menu:
   main:
     parent: tech
-toc: disabled
+notoc: notoc
 title: Tesla messages
 description: Message specifications for the Tesla protocol
 weight: 81
 ---
 
 # Protocol Documentation
-<a name="top"/>
+
 
 ## Table of Contents
 * [game.proto](#game.proto)
@@ -31,12 +31,11 @@ weight: 81
  * [PlayerJoinResponse](#tesla.PlayerJoinResponse)
 * [Scalar Value Types](#scalar-value-types)
 
-<a name="game.proto"/>
-<p align="right"><a href="#top">Top</a></p>
+
 
 ## game.proto
 
-<a name="tesla.EventGameEnd"/>
+
 ### EventGameEnd
 
 
@@ -45,7 +44,7 @@ weight: 81
 | GameID | uint64 | required |  |
 | EndTime | int64 | required |  |
 
-<a name="tesla.EventGameStart"/>
+
 ### EventGameStart
 
 
@@ -55,12 +54,11 @@ weight: 81
 | StartTime | int64 | required |  |
 
 
-<a name="lobby.proto"/>
-<p align="right"><a href="#top">Top</a></p>
+
 
 ## lobby.proto
 
-<a name="tesla.LobbyChatMessage"/>
+
 ### LobbyChatMessage
 
 
@@ -71,7 +69,7 @@ weight: 81
 | Text | string | required |  |
 | Target | LobbyChatMessage.MessageTarget | required |  |
 
-<a name="tesla.LobbyPlayerJoin"/>
+
 ### LobbyPlayerJoin
 
 
@@ -80,7 +78,7 @@ weight: 81
 | PlayerID | uint64 | required |  |
 | EventTime | int64 | required |  |
 
-<a name="tesla.LobbyPlayerLeave"/>
+
 ### LobbyPlayerLeave
 
 
@@ -90,7 +88,7 @@ weight: 81
 | EventTime | int64 | required |  |
 
 
-<a name="tesla.LobbyChatMessage.MessageTarget"/>
+
 ### LobbyChatMessage.MessageTarget
 
 
@@ -99,12 +97,11 @@ weight: 81
 | All | 1 |  |
 | Team | 2 |  |
 
-<a name="players.proto"/>
-<p align="right"><a href="#top">Top</a></p>
+
 
 ## players.proto
 
-<a name="tesla.PlayerInfo"/>
+
 ### PlayerInfo
 
 
@@ -113,7 +110,7 @@ weight: 81
 | ID | uint64 | required |  |
 | DisplayName | string | required |  |
 
-<a name="tesla.PlayerReference"/>
+
 ### PlayerReference
 
 
@@ -123,7 +120,7 @@ weight: 81
 | DisplayName | string | required |  |
 
 
-<a name="tesla.PlayerAuthenticationLevel"/>
+
 ### PlayerAuthenticationLevel
 
 
@@ -136,12 +133,11 @@ weight: 81
 | Mod | 21 |  |
 | Admin | 42 |  |
 
-<a name="validation.proto"/>
-<p align="right"><a href="#top">Top</a></p>
+
 
 ## validation.proto
 
-<a name="tesla.PlayerJoinRequest"/>
+
 ### PlayerJoinRequest
 
 
@@ -151,7 +147,7 @@ weight: 81
 | PlayerID | uint64 | required |  |
 | AuthenticationHash | bytes | required |  |
 
-<a name="tesla.PlayerJoinResponse"/>
+
 ### PlayerJoinResponse
 
 
@@ -162,7 +158,7 @@ weight: 81
 
 
 
-<a name="scalar-value-types"/>
+
 ## Scalar Value Types
 
 | .proto Type | Notes | C++ Type | Java Type | Python Type |
