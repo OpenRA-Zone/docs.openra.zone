@@ -19,6 +19,8 @@ The DS opens a TCP connection to the CS. Mssages between the DS and CS are seria
 
 Message serialization is achieved with Google's protobuf. For more information about protobuf itself, read the [protobuf documentation pages](https://developers.google.com/protocol-buffers/docs/overview).
 
+Protobuf message definitions are located at [github.com/OpenRA-Zone/tesla](https://github.com/OpenRA-Zone/tesla).
+
 Protobuf structure definitions are created for the different message types that can be sent
 
 # Encapsulation
@@ -36,7 +38,7 @@ The hard limit for a single message is: 6+(2^32) bytes (~4.3GB). (A softlimit sh
 The initial protocol will not use TLS. The information transmitted over the TCP connections won't contain 
 
 ## Message type
-The message type indicates which type of data is encoded. In most cases this will also indicate the event for which the data was sent.
+The message type indicates which type of message is serialized.
 
  - Player join
  - Player leave
