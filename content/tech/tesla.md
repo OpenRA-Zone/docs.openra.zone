@@ -13,29 +13,21 @@ aliases:
 
 This document describes how the Dedicated Server (DS) and Central Server (CS) comunicate.
 
-The DS opens a TCP connection to the CS. Data in messages between the DS and CS are encoded with protobuf. Because protobuf does not provide a data encapsulation format for tcp, the messages on the TCP connection are encapsulated in a custom binary format.
+The DS opens a TCP connection to the CS. Mssages between the DS and CS are serialized with protobuf. Because protobuf does not provide a data encapsulation format for tcp, the messages on the TCP connection are encapsulated in a custom binary format.
 
-# Encoding
+# Message serialization
 
-Data encoding is achieved with protobuf.
-
-> "Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages – Java, C++, or Python."
+Message serialization is achieved with Google's protobuf. For more information about protobuf itself, read the [protobuf documentation pages](https://developers.google.com/protocol-buffers/docs/overview).
 
 Protobuf structure definitions are created for the different message types that can be sent
 
-## List of data structures
-
- - A
- - B
- - TODO
-
 # Encapsulation
 
-The encoded data is sent in a custom envelope following a simple scheme:
+The serialized message is sent in a custom data envelope following a simple scheme:
 
  - 2 bytes uint16: message type (event code)
- - 4 bytes data length (n)
- - n bytes data
+ - 4 bytes message length (n)
+ - n bytes message
 
 The hard limit for a single message is: 6+(2^32) bytes (~4.3GB). (A softlimit should be used to avoid ddos attacks. The value of the soft limit can be decided after implementation.)
 
