@@ -11,7 +11,7 @@ aliases:
     - /tech/ds-cs-communication/
 ---
 
-This document describes how the Dedicated Server (DS) and Central Server (CS) comunicate.
+This document describes how the Dedicated Server (DS) and Central Server (CS) communicate.
 
 The DS opens a TCP connection to the CS. Mssages between the DS and CS are serialized with protobuf. Because protobuf does not provide a data encapsulation format for tcp, the messages on the TCP connection are encapsulated in a custom binary format.
 
