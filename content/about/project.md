@@ -13,5 +13,3 @@ weight: 70
 ## About OpenRA: Zone
 
 Introduction to this project, our targets and the team.
-
-[afdsa](/foobar)
