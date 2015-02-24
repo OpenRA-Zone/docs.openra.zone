@@ -1,10 +1,10 @@
 ---
 date: 2013-07-01
-linktitle: DS-CS Communication
+linktitle: Tesla protocol
 menu:
 	main:
 		parent: tech
-title: DS<->CS Communication
+title: Tesla protocol
 description: Communication protocols between dedicated server and central server
 weight: 80
 aliases:
