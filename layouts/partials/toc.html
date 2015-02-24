@@ -1,4 +1,4 @@
-{{ if and (isset .Params "toc") (.Params.toc) }}
+{{ if and (isset .Params "notoc") (.Params.notoc) }}
 	<!-- no table of contents, "notoc" is set -->
 {{else}}
 	{{ if .TableOfContents }}

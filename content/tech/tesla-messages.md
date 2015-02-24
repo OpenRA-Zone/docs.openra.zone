@@ -4,10 +4,12 @@ linktitle: Tesla messages
 menu:
   main:
     parent: tech
+toc: disabled
 title: Tesla messages
 description: Message specifications for the Tesla protocol
 weight: 81
 ---
+
 # Protocol Documentation
 <a name="top"/>
 
