@@ -2,11 +2,13 @@
 date: 2013-07-01
 linktitle: DS-CS Communication
 menu:
-  main:
-    parent: tech
+	main:
+		parent: tech
 title: DS<->CS Communication
 description: Communication protocols between dedicated server and central server
 weight: 80
+aliases:
+	- /tech/ds-cs-communication/
 ---
 
 This document describes how the Dedicated Server (DS) and Central Server (CS) comunicate.
