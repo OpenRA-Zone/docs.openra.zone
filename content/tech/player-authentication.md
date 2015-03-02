@@ -33,6 +33,8 @@ Flaw here is that the DS server OP might replay the players authentication. Are 
 
 # PC->DS authentication (New idea: joincodes)
 
+When a Player client (PC) connects to a Dedicated Server (DS) the client must authenticate to the DS.
+
  - 1) The Player Client (PC) requests a joincode for a specific Dedicated Server (DS) from the Central Server (CS).
   - The game client displays a 'waiting' screen until the authentication is completed, at normal ping times this should all take under 500ms.
  - 2) The server returns a joincode to the player
