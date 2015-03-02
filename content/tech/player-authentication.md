@@ -30,3 +30,5 @@ Login returns Player Authentication Key (PAK), to be used with following request
  - CS compares hashes and returns result
 
 Flaw here is that the DS server OP might replay the players authentication. Are we considering that to be a serious vulnerability at this stage?
+
+{{%gliffy 7383485 %}}
